@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:paddingBottom="5dp">
+
+    <TextView
+        android:id="@+id/pr_nazwa"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:textColor="#4bb6d6"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/remove_product"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/round_remove_btn"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/pr_kcal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#ab12ab"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/pr_nazwa"
+        app:layout_constraintTop_toBottomOf="@+id/pr_nazwa" />
+
+    <TextView
+        android:id="@+id/pr_weglowodany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text=""
+        android:textColor="#aaaaaa"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/pr_kcal"
+        app:layout_constraintTop_toBottomOf="@+id/pr_nazwa" />
+
+    <TextView
+        android:id="@+id/pr_tluszcz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text=""
+        android:textColor="#aaaaaa"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/pr_weglowodany"
+        app:layout_constraintTop_toBottomOf="@+id/pr_nazwa" />
+
+    <TextView
+        android:id="@+id/pr_bialko"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text=""
+        android:textColor="#aaaaaa"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/pr_tluszcz"
+        app:layout_constraintTop_toBottomOf="@+id/pr_nazwa" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

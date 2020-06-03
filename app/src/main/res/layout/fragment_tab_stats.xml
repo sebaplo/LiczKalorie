@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tabStats" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/bctxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="Wykres spożytych kalorii"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#5C6BC0"
+                android:textStyle="bold|italic" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/barchart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginBottom="50dp">
+
+            </com.github.mikephil.charting.charts.BarChart>
+
+            <TextView
+                android:id="@+id/bc1txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wykres spożytych węglowodanów"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#5C6BC0"
+                android:textStyle="bold|italic" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/barchart1"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginBottom="50dp">
+
+            </com.github.mikephil.charting.charts.BarChart>
+
+            <TextView
+                android:id="@+id/bc2txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wykres spożytych tłuszczy"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#5C6BC0"
+                android:textStyle="bold|italic" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/barchart2"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginBottom="50dp">
+
+            </com.github.mikephil.charting.charts.BarChart>
+
+            <TextView
+                android:id="@+id/bc3txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wykres spożytych białek"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#5C6BC0"
+                android:textStyle="bold|italic" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/barchart3"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginBottom="50dp">
+
+            </com.github.mikephil.charting.charts.BarChart>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
